@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: beige;
+    font-size: 20px;
+    font-family: 'Lato', 'sans-serif';
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.player-0-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.player-1-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 80%;
+}
+
+button{
+    width: 200px;
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {font-weight: 600;}
+
+button:focus{
+    outline: none;
+}
+
+.center .btn-roll,
+.center .btn-hold,
+.center .final-score{
+    margin-bottom: 10px;
+}
+
+.center .final-score{
+    text-align: center;
+    border: none;
+    padding: 10px 27px;
+    background-color: #eb4d4d;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.final-score:focus::placeholder{
+    color: black;
+}
+.center .final-score:focus{
+    background-color: wheat;
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
+.btn-new{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+}
+
+.winner-score{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 55px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.dice{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40%;
+    height: 100px;
+    box-shadow: 0px 10px 20px rgb(0,0,0)
+}
+
+.player-name{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.active{background-color: #f7f7f7;}
+.active .player-name {font-weight: 400;}
+
+.active .player-name::after{
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -5px;
+}
+
+.player-score{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;
+}
+
+.player-current-box{
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.player-current-label{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.player-current-score{
+    font-size: 30px;
+}
+
+.winner {background-color: #fff;}
+.winner .player-name {font-weight: bold; color: #EB4D4D;}
+
+.small-icon{
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 150%;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.winner-text{
+    position: absolute;
+    left: 50%;
+    transform: translate(-48%);
+    top: 590px;
+    width: 379px;
+    text-align: center;
+    font-size: 44px;
+}
+
+.winner-image{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 24%;
+    height: 369px;
+}
+
+.loser-text{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 312px;
+    font-size: 33px;
+    width: 264px;
+    text-align: center;
+    color: rgb(138,43,226);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="player-0-panel active">
+            <div class="player-name">Player 1</div>
+            <div class="player-score">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score">0</div>
+            </div>
+        </div>
+
+
+    <div class="center">
+        <button class="btn-new"><ion-icon name="add-circle-outline" class= "small-icon"></ion-icon>New Game</ion-icon></button>
+        <img class="winner-image" src="img/trophy.png" alt="">
+        <p class="winner-score"></p>
+        <img src="img/dice-3.png" alt="Dice" class="dice">
+        <p class="loser-text">Unlucky Dice <br> Opponent's turn</p>
+        <button class="btn-roll"><ion-icon name="repeat-outline" class= "small-icon"></ion-icon>Roll Dice</ion-icon></button>
+        <button class="btn-hold"><ion-icon name="download-outline" class= "small-icon"></ion-icon>Hold</ion-icon></button>
+        <input type="text" placeholder="Enter Winner Score" class="final-score">
+        <h1 class="winner-text"></h1>
+    </div>
+
+
+    <div class="player-1-panel">
+        <div class="player-name">Player 2</div>
+        <div class="player-score">0</div>
+        <div class="player-current-box">
+            <div class="player-current-label">Current</div>
+            <div class="player-current-score">0</div>
+        </div>
+    </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
